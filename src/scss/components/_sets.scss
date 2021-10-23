@@ -1,0 +1,47 @@
+.sets {
+  background-color: $blue;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+
+  &:hover {
+    .sets__image-main {
+      margin-top: 0;
+    }
+
+    .sets__title {
+      margin-top: -10%;
+    }
+  }
+
+  &__inner {
+    overflow: hidden;
+  }
+
+  &__image-main {
+    width: 90%;
+    height: auto;
+    margin-top: -10%;
+    transition: margin-top 1s;
+  }
+
+  &__image-leaf {
+    position: absolute;
+    right: -14%;
+    top: 25%;
+    width: 22%;
+    height: auto;
+    z-index: 1;
+    overflow: visible;
+  }
+
+  &__title {
+    font-size: 3.5vw;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+    margin-left: 15%;
+    user-select: none;
+    transition: margin-top 1s;
+  }
+}
