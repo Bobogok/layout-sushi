@@ -1,0 +1,71 @@
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 15px 0;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social {
+    & + & {
+      margin-left: 12px;
+    }
+  }
+
+  &__find {
+    padding-left: 40px;
+    a {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__find-link {
+  }
+
+  &__find-icon {
+    padding-right: 5px;
+  }
+
+  &__about {
+    flex: 1;
+    text-align: center;
+  }
+
+  &__about-link {
+    & + & {
+      margin-left: 15px;
+    }
+  }
+
+  &__pay {
+    display: flex;
+  }
+
+  &__pay-image {
+    & + & {
+      margin-left: 5px;
+    }
+  }
+
+  &__applinks {
+    padding-left: 12px;
+    display: flex;
+
+    a + a {
+      padding-left: 5px;
+    }
+  }
+
+  &__applinks-image {
+    max-height: 25px;
+    vertical-align: middle;
+  }
+}

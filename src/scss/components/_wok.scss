@@ -1,0 +1,54 @@
+.wok {
+  position: relative;
+  background-color: $white;
+  // z-index: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+
+  &:hover {
+    .wok__image-main {
+      transform: translateX(0);
+    }
+  }
+
+  &__title-inner {
+    padding: 10%;
+    flex: 1 1 auto;
+    color: $red;
+    font-weight: bold;
+  }
+
+  &__title {
+    font-size: 3.5vw;
+  }
+
+  &__subtitle {
+    font-size: 1vw;
+    margin-top: 1%;
+  }
+
+  &__image-main {
+    flex: 0 0 auto;
+    width: 100%;
+    transform: translateX(-7%);
+    transition: transform 1s;
+  }
+
+  &__image-leaf-top {
+    position: absolute;
+    width: 27%;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &__image-leaf-bottom {
+    position: absolute;
+    width: 27%;
+    right: 0;
+    bottom: 0;
+  }
+}
