@@ -8,6 +8,15 @@
     display: flex;
   }
 
+  &__social,
+  &__find-link,
+  &__about-link,
+  a {
+    cursor: pointer;
+    color: $grey;
+    fill: $grey;
+  }
+
   &__socials {
     display: flex;
     align-items: center;
@@ -15,15 +24,28 @@
 
   &__social {
     & + & {
-      margin-left: 12px;
+      margin-left: 17px;
+    }
+
+    &:hover {
+      fill: $red;
     }
   }
 
   &__find {
-    padding-left: 40px;
+    margin-left: 40px;
     a {
       display: flex;
       align-items: center;
+    }
+
+    &:hover {
+      a {
+        color: $red;
+        svg {
+          fill: $red;
+        }
+      }
     }
   }
 
@@ -42,6 +64,14 @@
   &__about-link {
     & + & {
       margin-left: 15px;
+    }
+
+    &.active {
+      color: $red;
+    }
+
+    &:hover {
+      color: $red;
     }
   }
 

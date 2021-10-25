@@ -48,7 +48,6 @@
             <a class="header__info-profile" href="#">
               Личный кабинет
               <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="20">
-                0
                 <path d="M0 0h24v24H0z" fill="none"></path>
                 <path
                   d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
@@ -57,6 +56,20 @@
             </a>
           </div>
         </div>
+        <nav class="header__navbar">
+          <ul class="header__navbar-elems">
+            <li class="header__navbar-elem"><a href="#" class="header__navbar-link">Роллы</a></li>
+            <li class="header__navbar-elem active"><a href="#" class="header__navbar-link">Комбо</a></li>
+            <li class="header__navbar-elem"><a href="#" class="header__navbar-link">Сеты</a></li>
+            <li class="header__navbar-elem"><a href="#" class="header__navbar-link">Сеты Edition</a></li>
+            <li class="header__navbar-elem"><a href="#" class="header__navbar-link">Суши</a></li>
+            <li class="header__navbar-elem"><a href="#" class="header__navbar-link">Воки</a></li>
+            <li class="header__navbar-elem"><a href="#" class="header__navbar-link">Супы</a></li>
+            <li class="header__navbar-elem"><a href="#" class="header__navbar-link">Темпура</a></li>
+            <li class="header__navbar-elem"><a href="#" class="header__navbar-link">Десерт</a></li>
+            <li class="header__navbar-elem"><a href="#" class="header__navbar-link">Ещё</a></li>
+          </ul>
+        </nav>
         <div class="header__about">
           <div class="header__about-top">
             <a href="#" class="header__about-link">О компании</a>
@@ -119,32 +132,32 @@
           <div class="list__elems">
             <div class="list__elem">
               <div class="list__image-box">
-                <img class="list__image list__image--left" src="./img/rolls_desktop.png" alt="" />
+                <img class="list__image-rolls" src="./img/rolls_desktop.png" alt="" />
               </div>
-              <div class="list__title list__title--right list__title--big">РОЛЛЫ</div>
+              <div class="list__title-rolls">РОЛЛЫ</div>
             </div>
             <div class="list__elem">
-              <div class="list__title list__title--left list__title--big">СУШИ</div>
+              <div class="list__title-sushi">СУШИ</div>
               <div class="list__image-box">
-                <img class="list__image list__image--right" src="./img/sushi_desktop.png" alt="" />
+                <img class="list__image-sushi" src="./img/sushi_desktop.png" alt="" />
               </div>
             </div>
             <div class="list__elem">
               <div class="list__image-box">
-                <img class="list__image list__image--left" src="./img/fried_rolls_desktop.png" alt="" />
+                <img class="list__image-fried" src="./img/fried_rolls_desktop.png" alt="" />
               </div>
-              <div class="list__title list__title--right list__title--small">
-                ЖАРЕННЫЕ <br />
+              <div class="list__title-fried">
+                ЖАРЕНЫЕ <br />
                 РОЛЛЫ
               </div>
             </div>
             <div class="list__elem">
-              <div class="list__title list__title--left list__title--small list__title--right-align">
-                ЗАПЕЧАТАННЫЕ <br />
+              <div class="list__title-backed">
+                ЗАПЕЧЕНЫЕ <br />
                 РОЛЛЫ
               </div>
               <div class="list__image-box">
-                <img class="list__image list__image--right" src="./img/baked_rolls_desktop.png" alt="" />
+                <img class="list__image-backed" src="./img/baked_rolls_desktop.png" alt="" />
               </div>
             </div>
           </div>
@@ -245,7 +258,7 @@
           </a>
         </div>
         <div class="footer__about">
-          <a href="#" class="footer__about-link">Акции</a>
+          <a href="#" class="footer__about-link active">Акции</a>
           <a href="#" class="footer__about-link">Франшиза</a>
           <a href="#" class="footer__about-link">Вакансии</a>
           <a href="#" class="footer__about-link">Отзывы</a>
