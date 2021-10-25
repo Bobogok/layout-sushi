@@ -1,8 +1,9 @@
 .footer {
   position: fixed;
-  width: 100%;
   bottom: 0;
+  width: 100%;
   padding: 15px 0;
+  background-color: $white;
 
   &__inner {
     display: flex;
@@ -12,8 +13,8 @@
   &__find-link,
   &__about-link,
   a {
-    cursor: pointer;
     color: $grey;
+    cursor: pointer;
     fill: $grey;
   }
 
@@ -34,6 +35,7 @@
 
   &__find {
     margin-left: 40px;
+
     a {
       display: flex;
       align-items: center;
@@ -42,6 +44,7 @@
     &:hover {
       a {
         color: $red;
+
         svg {
           fill: $red;
         }
@@ -86,8 +89,8 @@
   }
 
   &__applinks {
-    padding-left: 12px;
     display: flex;
+    padding-left: 12px;
 
     a + a {
       padding-left: 5px;

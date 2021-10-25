@@ -1,4 +1,21 @@
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  max-height: 82px;
+  background-color: $white;
+
+  &__info-number:hover,
+  &__info-profile:hover,
+  &__about-link:hover {
+    color: $red;
+
+    svg {
+      fill: $red;
+    }
+  }
+
   a,
   &__info-city {
     color: $grey;
@@ -25,7 +42,6 @@
 
   &__info {
     margin-left: 36px;
-    // flex: 1 1 auto;
   }
 
   &__info-top {
@@ -33,12 +49,21 @@
   }
 
   &__info-city {
-    cursor: pointer;
-    font-size: 15px;
     display: flex;
     align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+
     svg {
       margin-left: 5px;
+    }
+
+    &:hover {
+      color: $red;
+
+      .header__info-city-icon {
+        fill: #f00;
+      }
     }
   }
 
@@ -64,20 +89,21 @@
   }
 
   &__navbar {
-    flex: 1 0 auto;
-    // display: none;
+    display: none;
+    flex: 1 1 auto;
   }
 
   &__navbar-elems {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   &__navbar-elem {
-    cursor: pointer;
-    padding: 8px 0;
     height: max-content;
+    padding: 8px 0;
+    cursor: pointer;
+
     & + & {
       margin-left: 15px;
     }
@@ -87,11 +113,17 @@
     }
 
     &.active {
-      border-radius: 19px;
-      background-color: $red;
       padding: 8px 24px;
+      background-color: $red;
+      border-radius: 19px;
+      transition: background-color 0.2s;
+
       a {
         color: $white;
+      }
+
+      &:hover {
+        background-color: darken($red, 10%);
       }
     }
 
@@ -106,8 +138,8 @@
   }
 
   &__about {
+    flex: 1 0 auto;
     margin-right: 30px;
-    flex: 1 0 0%;
     text-align: end;
   }
 
@@ -124,14 +156,18 @@
   }
 
   &__cashback {
-    margin-right: 50px;
-    font-size: 15px;
-    color: $grey;
+    margin-right: 30px;
     padding: 10px 25px;
-    border-radius: 19px;
+    color: $grey;
+    font-size: 15px;
     background-color: $white;
+    border-radius: 19px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 10%);
     cursor: pointer;
+
+    &:active {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 10%) inset;
+    }
   }
 
   &__cashback-inner {

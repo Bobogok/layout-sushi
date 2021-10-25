@@ -1,4 +1,6 @@
-.main {
+.tabs {
+  padding-top: 82px;
+
   &__inner {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

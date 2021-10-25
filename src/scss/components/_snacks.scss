@@ -22,13 +22,13 @@
 
   &__title-drink,
   &__title-tempura {
-    font-size: 1.8vw;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $red;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: $red;
+    font-weight: bold;
+    font-size: 1.8vw;
+    text-transform: uppercase;
   }
 
   &__title-tempura {
@@ -46,14 +46,11 @@
   &__image-tempura {
     margin-left: -15%;
     transition: margin-left 1s;
-    // flex: 1 1 50%;
-    // width: 75%;
   }
 
   &__image-drink {
     width: 100%;
     margin-top: -2.5%;
     transition: margin-top 1s;
-    // flex: 1 1 auto;
   }
 }

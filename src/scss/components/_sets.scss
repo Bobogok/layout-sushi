@@ -1,7 +1,6 @@
 .sets {
-  background-color: $blue;
   position: relative;
-  // z-index: 1;
+  background-color: $blue;
   cursor: pointer;
 
   &:hover {
@@ -27,21 +26,21 @@
 
   &__image-leaf {
     position: absolute;
-    right: -14%;
     top: 25%;
+    right: -14%;
+    z-index: 1;
     width: 22%;
     height: auto;
-    z-index: 1;
     overflow: visible;
   }
 
   &__title {
-    font-size: 3.5vw;
-    font-weight: bold;
-    color: $white;
-    text-transform: uppercase;
     margin-left: 15%;
-    user-select: none;
+    color: $white;
+    font-weight: bold;
+    font-size: 3.5vw;
+    text-transform: uppercase;
     transition: margin-top 1s;
+    user-select: none;
   }
 }
